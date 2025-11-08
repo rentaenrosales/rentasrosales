@@ -24,45 +24,20 @@
   
   <!-- Favicon -->
   <link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🏠&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
-  
-  <!-- Preconnect para fonts -->
+
+  <!-- Preconexión y pre-carga de recursos clave -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Tailwind CSS y fuentes -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-  
-  <!-- Tailwind config -->
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#E63946",
-            "secondary": "#2A9D8F",
-            "text-dark": "#2B2D42",
-            "background-light": "#FFFFFF",
-            "background-dark": "#1a1b26",
-            "card-light": "#F4F4F4",
-            "card-dark": "#2B2D42"
-          },
-          fontFamily: {
-            display: ["Work Sans", "sans-serif"],
-          },
-          borderRadius: {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-        },
-      },
-    }
-  </script>
-  
+  <link rel="preload" as="style" href="/styles.css">
+  <link rel="preload" as="image" href="/images/habitacion-101.webp" type="image/webp">
+
+  <!-- Tailwind CSS compilado -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Fuentes optimizadas (solo los pesos necesarios) -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet"/>
+
   <!-- Google tag (gtag.js) - REEMPLAZA AW-XXXXXXXXX con tu ID de Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
   <script>
@@ -125,15 +100,6 @@
     }
   }
   </script>
-  
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .group:focus .group-focus\:block {
-      display: block;
-    }
-  </style>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-text-dark dark:text-gray-200">
