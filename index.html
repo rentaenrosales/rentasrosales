@@ -128,58 +128,58 @@
                Grid responsivo con 7 habitaciones disponibles
                ======================================== -->
           <section class="py-4" id="habitaciones">
-            <!-- Grid: 1 columna en móvil, 2 en tablet, 3 en desktop -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <!-- ========================================
-                   HABITACIÓN 101
-                   Habitación principal con capacidad para 4 personas
-                   ======================================== -->
+              <!-- Habitación 101 -->
               <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-                <!-- Imagen optimizada en WebP con fallback -->
                 <picture>
-                  <source srcset="/images/habitacion-101.webp" type="image/webp">
+                  <source 
+                    srcset="/images/habitacion-101-small.webp 400w,
+                            /images/habitacion-101-medium.webp 800w,
+                            /images/habitacion-101.webp 1280w"
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px"
+                    type="image/webp">
                   <img src="/images/habitacion-101.webp" 
-                       alt="Habitación 101: amplia con ventana a la calle, dos camas dobles en espacios diferentes, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="eager"          
-                       fetchpriority="high" 
-                       decoding="async"    
-                       width="640"              
-                       height="360">
+                      alt="Habitación 101: amplia con ventana a la calle, dos camas dobles en espacios diferentes, baño privado y escritorio" 
+                      class="w-full aspect-video object-cover"
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                      width="640"
+                      height="360">
                 </picture>
-                
-                <!-- Información de la habitación -->
                 <div class="px-4 flex flex-col gap-2">
                   <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 101</p>
                   <p class="text-secondary text-sm font-normal leading-normal">Desde $190.000 la noche - Max. 4 personas</p>
                 </div>
-                
-                <!-- Botón CTA con tracking de conversiones -->
                 <div class="px-4 pb-2">
                   <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales101" 
-                    target="_blank"              
-                    rel="noopener"               
-                    data-room="rosales101"       
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales101"
                     onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales101'}); fbq('track','Lead',{content_name:'rosales101',content_category:'habitacion',value:190.00,currency:'COP'}); return true;">
                     Reservar en Airbnb Ahora
                   </a>
                 </div>
               </div>
 
-              <!-- ========================================
-                   HABITACIÓN 102
-                   ======================================== -->
+              <!-- Habitación 102 -->
               <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
                 <picture>
-                  <source srcset="/images/habitacion-102.webp" type="image/webp">
+                  <source 
+                    srcset="/images/habitacion-102-small.webp 400w,
+                            /images/habitacion-102-medium.webp 800w,
+                            /images/habitacion-102.webp 1280w"
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px"
+                    type="image/webp">
                   <img src="/images/habitacion-102.webp" 
-                       alt="Habitación 102: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="lazy"           
-                       width="640"
-                       height="360">
+                      alt="Habitación 102: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
+                      class="w-full aspect-video object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="360">
                 </picture>
                 <div class="px-4 flex flex-col gap-2">
                   <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 102</p>
@@ -197,18 +197,22 @@
                 </div>
               </div>
 
-              <!-- ========================================
-                   HABITACIÓN 201
-                   ======================================== -->
+              <!-- Habitación 201 -->
               <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
                 <picture>
-                  <source srcset="/images/habitacion-201.webp" type="image/webp">
+                  <source 
+                    srcset="/images/habitacion-201-small.webp 400w,
+                            /images/habitacion-201-medium.webp 800w,
+                            /images/habitacion-201.webp 1280w"
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px"
+                    type="image/webp">
                   <img src="/images/habitacion-201.webp" 
-                       alt="Habitación 201: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="lazy"
-                       width="640"
-                       height="360">
+                      alt="Habitación 201: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
+                      class="w-full aspect-video object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="360">
                 </picture>
                 <div class="px-4 flex flex-col gap-2">
                   <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 201</p>
@@ -226,18 +230,22 @@
                 </div>
               </div>
 
-              <!-- ========================================
-                   HABITACIÓN 202
-                   ======================================== -->
+              <!-- Habitación 202 -->
               <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
                 <picture>
-                  <source srcset="/images/habitacion-202.webp" type="image/webp">
+                  <source 
+                    srcset="/images/habitacion-202-small.webp 400w,
+                            /images/habitacion-202-medium.webp 800w,
+                            /images/habitacion-202.webp 1280w"
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px"
+                    type="image/webp">
                   <img src="/images/habitacion-202.webp" 
-                       alt="Habitación 202: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="lazy"
-                       width="640"
-                       height="360">
+                      alt="Habitación 202: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
+                      class="w-full aspect-video object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="360">
                 </picture>
                 <div class="px-4 flex flex-col gap-2">
                   <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 202</p>
@@ -255,18 +263,22 @@
                 </div>
               </div>
 
-              <!-- ========================================
-                   HABITACIÓN 203
-                   ======================================== -->
+              <!-- Habitación 203 -->
               <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
                 <picture>
-                  <source srcset="/images/habitacion-203.webp" type="image/webp">
+                  <source 
+                    srcset="/images/habitacion-203-small.webp 400w,
+                            /images/habitacion-203-medium.webp 800w,
+                            /images/habitacion-203.webp 1280w"
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px"
+                    type="image/webp">
                   <img src="/images/habitacion-203.webp" 
-                       alt="Habitación 203: compacta sin ventana, cama doble, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="lazy"
-                       width="640"
-                       height="360">
+                      alt="Habitación 203: compacta sin ventana, cama doble, baño privado y escritorio" 
+                      class="w-full aspect-video object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="360">
                 </picture>
                 <div class="px-4 flex flex-col gap-2">
                   <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 203</p>
@@ -284,18 +296,22 @@
                 </div>
               </div>
 
-              <!-- ========================================
-                   HABITACIÓN 204
-                   ======================================== -->
+              <!-- Habitación 204 -->
               <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
                 <picture>
-                  <source srcset="/images/habitacion-204.webp" type="image/webp">
+                  <source 
+                    srcset="/images/habitacion-204-small.webp 400w,
+                            /images/habitacion-204-medium.webp 800w,
+                            /images/habitacion-204.webp 1280w"
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px"
+                    type="image/webp">
                   <img src="/images/habitacion-204.webp" 
-                       alt="Habitación 204: con ventana al patio interno, cama doble, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="lazy"
-                       width="640"
-                       height="360">
+                      alt="Habitación 204: con ventana al patio interno, cama doble, baño privado y escritorio" 
+                      class="w-full aspect-video object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="360">
                 </picture>
                 <div class="px-4 flex flex-col gap-2">
                   <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 204</p>
@@ -313,50 +329,22 @@
                 </div>
               </div>
 
-              <!-- ========================================
-                   HABITACIÓN 205 - DESACTIVADA
-                   Comentada para no mostrarla en el sitio
-                   ======================================== -->
-              <!-- 
+              <!-- Habitación 206 -->
               <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
                 <picture>
-                  <source srcset="/images/habitacion-205.webp" type="image/webp">
-                  <img src="/images/habitacion-205.webp" 
-                       alt="Habitación 205: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="lazy"
-                       width="640"
-                       height="360">
-                </picture>
-                <div class="px-4 flex flex-col gap-2">
-                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 205</p>
-                  <p class="text-secondary text-sm font-normal leading-normal">Desde $145.000 la noche - Max. 2 personas</p>
-                </div>
-                <div class="px-4 pb-2">
-                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-                    href="https://airbnb.com/h/rosales205" 
-                    target="_blank" 
-                    rel="noopener"
-                    data-room="rosales205"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales205'}); fbq('track','Lead',{content_name:'rosales205',content_category:'habitacion',value:145.00,currency:'COP'}); return true;">
-                    Reservar en Airbnb Ahora
-                  </a>
-                </div>
-              </div>
-              -->
-
-              <!-- ========================================
-                   HABITACIÓN 206
-                   ======================================== -->
-              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-                <picture>
-                  <source srcset="/images/habitacion-206.webp" type="image/webp">
+                  <source 
+                    srcset="/images/habitacion-206-small.webp 400w,
+                            /images/habitacion-206-medium.webp 800w,
+                            /images/habitacion-206.webp 1280w"
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px"
+                    type="image/webp">
                   <img src="/images/habitacion-206.webp" 
-                       alt="Habitación 206: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
-                       class="w-full aspect-video object-cover"
-                       loading="lazy"
-                       width="640"
-                       height="360">
+                      alt="Habitación 206: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
+                      class="w-full aspect-video object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width="640"
+                      height="360">
                 </picture>
                 <div class="px-4 flex flex-col gap-2">
                   <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 206</p>
@@ -375,42 +363,28 @@
               </div>
             </div>
             
-            <!-- ========================================
-                 ATRIBUTOS COMUNES
-                 Badges con amenidades compartidas por todas las habitaciones
-                 ======================================== -->
+            <!-- Atributos comunes -->
             <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-4 text-center">
-              <!-- Baño privado -->
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-secondary">shower</span>
                 <span class="text-sm font-medium">Baño Privado</span>
               </div>
-              
-              <!-- Tamaño de camas -->
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-secondary">bed</span>
                 <span class="text-sm font-medium">Camas de 1,60 m</span>
               </div>
-              
-              <!-- Ventilador -->
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-secondary">air</span>
                 <span class="text-sm font-medium">Ventilador</span>
               </div>
-              
-              <!-- Wi-Fi -->
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-secondary">wifi</span>
                 <span class="text-sm font-medium">Wi-Fi</span>
               </div>
-              
-              <!-- Smart TV -->
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-secondary">tv</span>
                 <span class="text-sm font-medium">Smart TV</span>
               </div>
-              
-              <!-- Escritorio -->
               <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-secondary">desk</span>
                 <span class="text-sm font-medium">Escritorio de Trabajo</span>
