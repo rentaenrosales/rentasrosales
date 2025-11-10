@@ -7,6 +7,20 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   
+  <!-- Preconexiones para reducir latencia de CDNs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  
+  <!-- Precargar imagen LCP (primera habitación) -->
+  <link rel="preload" 
+        as="image" 
+        href="/images/habitacion-101-medium.webp"
+        imagesrcset="/images/habitacion-101-small.webp 400w,
+                     /images/habitacion-101-medium.webp 800w,
+                     /images/habitacion-101.webp 1280w"
+        imagesizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1280px">
+  
   <!-- SEO: Título y descripción para buscadores -->
   <title>Rentas Rosales | Habitaciones Privadas en Belén Rosales - Medellín</title>
   <meta content="Habitaciones privadas con baño y escritorio en barrio residencial tranquilo y seguro. Ubicación estratégica y hasta 30% de descuento en estadías largas." name="description"/>
@@ -21,40 +35,36 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   
   <!-- Google Fonts: Work Sans (tipografía principal) -->
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
   
   <!-- Google Material Symbols: íconos (wifi, shower, bed, etc.) -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet"/>
   
   <!-- ========================================
        CONFIGURACIÓN DE TAILWIND CSS
-       Personalización de colores y estilos
        ======================================== -->
   <script>
     tailwind.config = {
-      darkMode: "class", // Activar modo oscuro con clase 'dark' en HTML
+      darkMode: "class",
       theme: {
         extend: {
-          // Colores personalizados del proyecto
           colors: {
-            "primary": "#E63946",        // Rojo para CTAs y acentos
-            "secondary": "#1F7A6D",      // Verde azulado para badges y detalles
-            "text-dark": "#2B2D42",      // Texto principal modo claro
-            "background-light": "#FFFFFF", // Fondo modo claro
-            "background-dark": "#1a1b26",  // Fondo modo oscuro
-            "card-light": "#F4F4F4",       // Fondo de tarjetas modo claro
-            "card-dark": "#2B2D42"         // Fondo de tarjetas modo oscuro
+            "primary": "#E63946",
+            "secondary": "#1F7A6D",  // Oscurecido para mejor contraste
+            "text-dark": "#2B2D42",
+            "background-light": "#FFFFFF",
+            "background-dark": "#1a1b26",
+            "card-light": "#F4F4F4",
+            "card-dark": "#2B2D42"
           },
-          // Tipografía personalizada
           fontFamily: {
-            display: ["Work Sans", "sans-serif"], // Fuente principal del sitio
+            display: ["Work Sans", "sans-serif"],
           },
-          // Bordes redondeados personalizados
           borderRadius: {
-            "DEFAULT": "0.25rem",  // Border radius por defecto
-            "lg": "0.5rem",        // Bordes redondeados grandes
-            "xl": "0.75rem",       // Bordes redondeados extra grandes
-            "full": "9999px"       // Bordes completamente redondeados (círculos/pills)
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
           },
         },
       },
@@ -65,12 +75,9 @@
        ESTILOS PERSONALIZADOS
        ======================================== -->
   <style>
-    /* Scroll suave al hacer click en anclas (#habitaciones, #reseñas, etc.) */
     html {
       scroll-behavior: smooth;
     }
-    
-    /* Mostrar elementos cuando el grupo tiene focus (accesibilidad) */
     .group:focus .group-focus\:block {
       display: block;
     }
