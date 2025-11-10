@@ -1,422 +1,568 @@
 <!DOCTYPE html>
-<html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Rentas Rosales | Habitaciones Privadas en Belén Rosales - Medellín</title>
-<meta content="Habitaciones privadas con baño y escritorio en barrio residencial tranquilo y seguro. Ubicación estratégica y hasta 30% de descuento en estadías largas." name="description"/>
-<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🏠&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script>
+<html class="light" lang="es">
+<head>
+  <!-- ========================================
+       META TAGS BÁSICOS
+       ======================================== -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  
+  <!-- SEO: Título y descripción para buscadores -->
+  <title>Rentas Rosales | Habitaciones Privadas en Belén Rosales - Medellín</title>
+  <meta content="Habitaciones privadas con baño y escritorio en barrio residencial tranquilo y seguro. Ubicación estratégica y hasta 30% de descuento en estadías largas." name="description"/>
+  
+  <!-- Favicon: ícono de la pestaña del navegador (emoji de casa en SVG) -->
+  <link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🏠&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
+  
+  <!-- ========================================
+       TAILWIND CSS Y FUENTES
+       ======================================== -->
+  <!-- Tailwind CSS via CDN con plugins de forms y container-queries -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <!-- Google Fonts: Work Sans (tipografía principal) -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Google Material Symbols: íconos (wifi, shower, bed, etc.) -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  
+  <!-- ========================================
+       CONFIGURACIÓN DE TAILWIND CSS
+       Personalización de colores y estilos
+       ======================================== -->
+  <script>
     tailwind.config = {
-      darkMode: "class",
+      darkMode: "class", // Activar modo oscuro con clase 'dark' en HTML
       theme: {
         extend: {
+          // Colores personalizados del proyecto
           colors: {
-            "primary": "#E63946",
-            "secondary": "#2A9D8F",
-            "text-dark": "#2B2D42",
-            "background-light": "#FFFFFF",
-            "background-dark": "#1a1b26",
-            "card-light": "#F4F4F4",
-            "card-dark": "#2B2D42"
+            "primary": "#E63946",        // Rojo para CTAs y acentos
+            "secondary": "#2A9D8F",      // Verde azulado para badges y detalles
+            "text-dark": "#2B2D42",      // Texto principal modo claro
+            "background-light": "#FFFFFF", // Fondo modo claro
+            "background-dark": "#1a1b26",  // Fondo modo oscuro
+            "card-light": "#F4F4F4",       // Fondo de tarjetas modo claro
+            "card-dark": "#2B2D42"         // Fondo de tarjetas modo oscuro
           },
+          // Tipografía personalizada
           fontFamily: {
-            display: ["Work Sans", "sans-serif"],
+            display: ["Work Sans", "sans-serif"], // Fuente principal del sitio
           },
+          // Bordes redondeados personalizados
           borderRadius: {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
+            "DEFAULT": "0.25rem",  // Border radius por defecto
+            "lg": "0.5rem",        // Bordes redondeados grandes
+            "xl": "0.75rem",       // Bordes redondeados extra grandes
+            "full": "9999px"       // Bordes completamente redondeados (círculos/pills)
           },
         },
       },
     }
   </script>
-<style>
+  
+  <!-- ========================================
+       ESTILOS PERSONALIZADOS
+       ======================================== -->
+  <style>
+    /* Scroll suave al hacer click en anclas (#habitaciones, #reseñas, etc.) */
     html {
       scroll-behavior: smooth;
     }
+    
+    /* Mostrar elementos cuando el grupo tiene focus (accesibilidad) */
     .group:focus .group-focus\:block {
       display: block;
     }
   </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-text-dark dark:text-gray-200">
-<div class="relative flex min-h-screen w-full flex-col">
-<div class="sticky top-0 z-50 bg-primary text-white text-center py-2 px-4 text-sm font-semibold">
-<p>HASTA 30% DE DESCUENTO EN ESTADÍAS LARGAS</p>
-</div>
-<div class="layout-container flex h-full grow flex-col">
-<main class="flex flex-1 justify-center py-2">
-<div class="layout-content-container flex w-full max-w-[960px] flex-1 flex-col px-4 sm:px-8">
-<header class="flex flex-col items-center justify-center gap-4 pt-4 pb-2 text-center">
-<!--div class="w-32 h-32 bg-center bg-no-repeat bg-cover rounded-full shadow-md" data-alt="Rentas Rosales logo, an abstract pink and green geometric shape" style='background-image: url("https://i.imgur.com/E67E0H2.png");'></div-->
-<div class="flex flex-col gap-3">
-<h1 class="text-text-dark dark:text-white text-3xl sm:text-4xl font-black leading-tight tracking-tighter">HABITACIONES PRIVADAS EN BELÉN ROSALES - MEDELLÍN</h1>
-<p class="text-secondary text-base font-normal leading-normal max-w-2xl mx-auto">Ubicación estratégica, tranquila y segura. <Br> Superanfitrion AirBnb <Br>⭐⭐⭐⭐⭐</p>
-</div>
-</header>
-<!-- SECCIÓN HABITACIONES -->
-<section class="py-4" id="habitaciones">
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- ========================================
+       CONTENEDOR PRINCIPAL
+       ======================================== -->
+  <div class="relative flex min-h-screen w-full flex-col">
     
-    <!-- Habitación 101 -->
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-101.webp" type="image/webp">
-        <img src="/images/habitacion-101.webp" 
-             alt="Habitación 101: amplia con ventana a la calle, dos camas dobles en espacios diferentes, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="eager"
-             fetchpriority="high"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 101</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $190.000 la noche - Max. 4 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales101" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales101"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales101'}); fbq('track','Lead',{content_name:'rosales101',content_category:'habitacion',value:190.00,currency:'COP'}); return true;">
-          Reservar en Airbnb Ahora
-        </a>
-      </div>
+    <!-- ========================================
+         BANNER PROMOCIONAL (sticky top)
+         Permanece visible al hacer scroll
+         ======================================== -->
+    <div class="sticky top-0 z-50 bg-primary text-white text-center py-2 px-4 text-sm font-semibold">
+      <p>HASTA 30% DE DESCUENTO EN ESTADÍAS LARGAS</p>
     </div>
+    
+    <!-- Contenedor de layout principal -->
+    <div class="layout-container flex h-full grow flex-col">
+      <main class="flex flex-1 justify-center py-2">
+        <div class="layout-content-container flex w-full max-w-[960px] flex-1 flex-col px-4 sm:px-8">
+          
+          <!-- ========================================
+               HEADER / ENCABEZADO PRINCIPAL
+               ======================================== -->
+          <header class="flex flex-col items-center justify-center gap-4 pt-4 pb-2 text-center">
+            <!-- Logo comentado - disponible para activar si se necesita -->
+            <!--
+            <div class="w-32 h-32 bg-center bg-no-repeat bg-cover rounded-full shadow-md" 
+                 data-alt="Rentas Rosales logo, an abstract pink and green geometric shape" 
+                 style='background-image: url("https://i.imgur.com/E67E0H2.png");'>
+            </div>
+            -->
+            
+            <div class="flex flex-col gap-3">
+              <!-- Título principal (H1) para SEO -->
+              <h1 class="text-text-dark dark:text-white text-3xl sm:text-4xl font-black leading-tight tracking-tighter">
+                HABITACIONES PRIVADAS EN BELÉN ROSALES - MEDELLÍN
+              </h1>
+              
+              <!-- Subtítulo con propuesta de valor -->
+              <p class="text-secondary text-base font-normal leading-normal max-w-2xl mx-auto">
+                Ubicación estratégica, tranquila y segura.<br> 
+                Superanfitrion AirBnb<br>
+                ⭐⭐⭐⭐⭐
+              </p>
+            </div>
+          </header>
+          
+          <!-- ========================================
+               SECCIÓN: HABITACIONES
+               Grid responsivo con 7 habitaciones disponibles
+               ======================================== -->
+          <section class="py-4" id="habitaciones">
+            <!-- Grid: 1 columna en móvil, 2 en tablet, 3 en desktop -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <!-- ========================================
+                   HABITACIÓN 101
+                   Habitación principal con capacidad para 4 personas
+                   ======================================== -->
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <!-- Imagen optimizada en WebP con fallback -->
+                <picture>
+                  <source srcset="/images/habitacion-101.webp" type="image/webp">
+                  <img src="/images/habitacion-101.webp" 
+                       alt="Habitación 101: amplia con ventana a la calle, dos camas dobles en espacios diferentes, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="eager"          <!-- Carga inmediata (primera imagen visible) -->
+                       fetchpriority="high"     <!-- Prioridad alta para LCP (Largest Contentful Paint) -->
+                       width="640"              <!-- Dimensiones explícitas para evitar CLS -->
+                       height="360">
+                </picture>
+                
+                <!-- Información de la habitación -->
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 101</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $190.000 la noche - Max. 4 personas</p>
+                </div>
+                
+                <!-- Botón CTA con tracking de conversiones -->
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales101" 
+                    target="_blank"              <!-- Abre en nueva pestaña -->
+                    rel="noopener"               <!-- Seguridad: evita acceso a window.opener -->
+                    data-room="rosales101"       <!-- Identificador para script de UTMs -->
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales101'}); fbq('track','Lead',{content_name:'rosales101',content_category:'habitacion',value:190.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb Ahora
+                  </a>
+                </div>
+              </div>
 
-    <!-- Habitación 102 -->
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-102.webp" type="image/webp">
-        <img src="/images/habitacion-102.webp" 
-             alt="Habitación 102: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="lazy"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 102</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $152.000 la noche - Max. 2 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales102" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales102"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales102'}); fbq('track','Lead',{content_name:'rosales102',content_category:'habitacion',value:152.00,currency:'COP'}); return true;">
-          Reservar en Airbnb Ahora
-        </a>
-      </div>
-    </div>
+              <!-- ========================================
+                   HABITACIÓN 102
+                   ======================================== -->
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <picture>
+                  <source srcset="/images/habitacion-102.webp" type="image/webp">
+                  <img src="/images/habitacion-102.webp" 
+                       alt="Habitación 102: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="lazy"           <!-- Carga diferida (lazy loading) -->
+                       width="640"
+                       height="360">
+                </picture>
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 102</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $152.000 la noche - Max. 2 personas</p>
+                </div>
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales102" 
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales102"
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales102'}); fbq('track','Lead',{content_name:'rosales102',content_category:'habitacion',value:152.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb Ahora
+                  </a>
+                </div>
+              </div>
 
-    <!-- Habitación 201 -->
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-201.webp" type="image/webp">
-        <img src="/images/habitacion-201.webp" 
-             alt="Habitación 201: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="lazy"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 201</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $176.000 la noche - Max. 2 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales201a" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales201a"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales201a'}); fbq('track','Lead',{content_name:'rosales201a',content_category:'habitacion',value:176.00,currency:'COP'}); return true;">
-          Reservar en Airbnb ahora
-        </a>
-      </div>
-    </div>
+              <!-- ========================================
+                   HABITACIÓN 201
+                   ======================================== -->
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <picture>
+                  <source srcset="/images/habitacion-201.webp" type="image/webp">
+                  <img src="/images/habitacion-201.webp" 
+                       alt="Habitación 201: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="lazy"
+                       width="640"
+                       height="360">
+                </picture>
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 201</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $176.000 la noche - Max. 2 personas</p>
+                </div>
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales201a" 
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales201a"
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales201a'}); fbq('track','Lead',{content_name:'rosales201a',content_category:'habitacion',value:176.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb ahora
+                  </a>
+                </div>
+              </div>
 
-    <!-- Habitación 202 -->
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-202.webp" type="image/webp">
-        <img src="/images/habitacion-202.webp" 
-             alt="Habitación 202: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="lazy"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 202</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $176.000 la noche - Max. 2 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales202" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales202"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales202'}); fbq('track','Lead',{content_name:'rosales202',content_category:'habitacion',value:176.00,currency:'COP'}); return true;">
-          Reservar en Airbnb Ahora
-        </a>
-      </div>
-    </div>
+              <!-- ========================================
+                   HABITACIÓN 202
+                   ======================================== -->
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <picture>
+                  <source srcset="/images/habitacion-202.webp" type="image/webp">
+                  <img src="/images/habitacion-202.webp" 
+                       alt="Habitación 202: amplia con ventana a la calle, cama doble, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="lazy"
+                       width="640"
+                       height="360">
+                </picture>
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 202</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $176.000 la noche - Max. 2 personas</p>
+                </div>
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales202" 
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales202"
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales202'}); fbq('track','Lead',{content_name:'rosales202',content_category:'habitacion',value:176.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb Ahora
+                  </a>
+                </div>
+              </div>
 
-    <!-- Habitación 203 -->
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-203.webp" type="image/webp">
-        <img src="/images/habitacion-203.webp" 
-             alt="Habitación 203: compacta sin ventana, cama doble, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="lazy"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 203</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $146.000 la noche - Max. 2 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales203" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales203"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales203'}); fbq('track','Lead',{content_name:'rosales203',content_category:'habitacion',value:146.00,currency:'COP'}); return true;">
-          Reservar en Airbnb Ahora
-        </a>
-      </div>
-    </div>
+              <!-- ========================================
+                   HABITACIÓN 203
+                   ======================================== -->
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <picture>
+                  <source srcset="/images/habitacion-203.webp" type="image/webp">
+                  <img src="/images/habitacion-203.webp" 
+                       alt="Habitación 203: compacta sin ventana, cama doble, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="lazy"
+                       width="640"
+                       height="360">
+                </picture>
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 203</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $146.000 la noche - Max. 2 personas</p>
+                </div>
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales203" 
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales203"
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales203'}); fbq('track','Lead',{content_name:'rosales203',content_category:'habitacion',value:146.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb Ahora
+                  </a>
+                </div>
+              </div>
 
-    <!-- Habitación 204 -->
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-204.webp" type="image/webp">
-        <img src="/images/habitacion-204.webp" 
-             alt="Habitación 204: con ventana al patio interno, cama doble, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="lazy"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 204</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $164.000 la noche - Max. 2 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales204" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales204"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales204'}); fbq('track','Lead',{content_name:'rosales204',content_category:'habitacion',value:164.00,currency:'COP'}); return true;">
-          Reservar en Airbnb Ahora
-        </a>
-      </div>
-    </div>
+              <!-- ========================================
+                   HABITACIÓN 204
+                   ======================================== -->
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <picture>
+                  <source srcset="/images/habitacion-204.webp" type="image/webp">
+                  <img src="/images/habitacion-204.webp" 
+                       alt="Habitación 204: con ventana al patio interno, cama doble, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="lazy"
+                       width="640"
+                       height="360">
+                </picture>
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 204</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $164.000 la noche - Max. 2 personas</p>
+                </div>
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales204" 
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales204"
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales204'}); fbq('track','Lead',{content_name:'rosales204',content_category:'habitacion',value:164.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb Ahora
+                  </a>
+                </div>
+              </div>
 
-    <!-- Habitación 205 
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-205.webp" type="image/webp">
-        <img src="/images/habitacion-205.webp" 
-             alt="Habitación 205: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="lazy"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 205</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $145.000 la noche - Max. 2 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales205" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales205"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales205'}); fbq('track','Lead',{content_name:'rosales205',content_category:'habitacion',value:145.00,currency:'COP'}); return true;">
-          Reservar en Airbnb Ahora
-        </a>
-      </div>
-    </div> -->
+              <!-- ========================================
+                   HABITACIÓN 205 - DESACTIVADA
+                   Comentada para no mostrarla en el sitio
+                   ======================================== -->
+              <!-- 
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <picture>
+                  <source srcset="/images/habitacion-205.webp" type="image/webp">
+                  <img src="/images/habitacion-205.webp" 
+                       alt="Habitación 205: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="lazy"
+                       width="640"
+                       height="360">
+                </picture>
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 205</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $145.000 la noche - Max. 2 personas</p>
+                </div>
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales205" 
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales205"
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales205'}); fbq('track','Lead',{content_name:'rosales205',content_category:'habitacion',value:145.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb Ahora
+                  </a>
+                </div>
+              </div>
+              -->
 
-    <!-- Habitación 206 -->
-    <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
-      <picture>
-        <source srcset="/images/habitacion-206.webp" type="image/webp">
-        <img src="/images/habitacion-206.webp" 
-             alt="Habitación 206: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
-             class="w-full aspect-video object-cover"
-             loading="lazy"
-             width="640"
-             height="360">
-      </picture>
-      <div class="px-4 flex flex-col gap-2">
-        <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 206</p>
-        <p class="text-secondary text-sm font-normal leading-normal">Desde $164.000 la noche - Max. 2 personas</p>
-      </div>
-      <div class="px-4 pb-2">
-        <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-          href="https://airbnb.com/h/rosales206" 
-          target="_blank" 
-          rel="noopener"
-          data-room="rosales206"
-          onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales206'}); fbq('track','Lead',{content_name:'rosales206',content_category:'habitacion',value:164.00,currency:'COP'}); return true;">
-          Reservar en Airbnb Ahora
-        </a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Atributos comunes -->
-  <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-4 text-center">
-    <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-secondary">shower</span>
-      <span class="text-sm font-medium">Baño Privado</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-secondary">bed</span>
-      <span class="text-sm font-medium">Camas de 1,60 m</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-secondary">air</span>
-      <span class="text-sm font-medium">Ventilador</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-secondary">wifi</span>
-      <span class="text-sm font-medium">Wi-Fi</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-secondary">tv</span>
-      <span class="text-sm font-medium">Smart TV</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-secondary">desk</span>
-      <span class="text-sm font-medium">Escritorio de Trabajo</span>
-    </div>
-  </div>
-</section>
+              <!-- ========================================
+                   HABITACIÓN 206
+                   ======================================== -->
+              <div class="flex flex-col gap-4 pb-3 bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm">
+                <picture>
+                  <source srcset="/images/habitacion-206.webp" type="image/webp">
+                  <img src="/images/habitacion-206.webp" 
+                       alt="Habitación 206: fresca con puerta al patio interno, cama doble, baño privado y escritorio" 
+                       class="w-full aspect-video object-cover"
+                       loading="lazy"
+                       width="640"
+                       height="360">
+                </picture>
+                <div class="px-4 flex flex-col gap-2">
+                  <p class="text-text-dark dark:text-white text-lg font-medium leading-normal">Habitación 206</p>
+                  <p class="text-secondary text-sm font-normal leading-normal">Desde $164.000 la noche - Max. 2 personas</p>
+                </div>
+                <div class="px-4 pb-2">
+                  <a class="flex w-full items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+                    href="https://airbnb.com/h/rosales206" 
+                    target="_blank" 
+                    rel="noopener"
+                    data-room="rosales206"
+                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales206'}); fbq('track','Lead',{content_name:'rosales206',content_category:'habitacion',value:164.00,currency:'COP'}); return true;">
+                    Reservar en Airbnb Ahora
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- ========================================
+                 ATRIBUTOS COMUNES
+                 Badges con amenidades compartidas por todas las habitaciones
+                 ======================================== -->
+            <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-4 text-center">
+              <!-- Baño privado -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">shower</span>
+                <span class="text-sm font-medium">Baño Privado</span>
+              </div>
+              
+              <!-- Tamaño de camas -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">bed</span>
+                <span class="text-sm font-medium">Camas de 1,60 m</span>
+              </div>
+              
+              <!-- Ventilador -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">air</span>
+                <span class="text-sm font-medium">Ventilador</span>
+              </div>
+              
+              <!-- Wi-Fi -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">wifi</span>
+                <span class="text-sm font-medium">Wi-Fi</span>
+              </div>
+              
+              <!-- Smart TV -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">tv</span>
+                <span class="text-sm font-medium">Smart TV</span>
+              </div>
+              
+              <!-- Escritorio -->
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">desk</span>
+                <span class="text-sm font-medium">Escritorio de Trabajo</span>
+              </div>
+            </div>
+          </section>
 
-<section class="py-6" id="cerca-de">
-<div class="flex flex-col items-center gap-6 text-center">
-<h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Cerca de:</h2>
-<div class="flex flex-wrap justify-center gap-3">
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">UPB: 5 min</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Metroplus: 2 min</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Unicentro: 10 min</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">La 70: 10 min</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Supermercados: 3 min</span>
-</div>
-</div>
-</section>
+          <!-- ========================================
+               SECCIÓN: CERCA DE
+               Ubicaciones cercanas de interés
+               ======================================== -->
+          <section class="py-6" id="cerca-de">
+            <div class="flex flex-col items-center gap-6 text-center">
+              <h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Cerca de:</h2>
+              <div class="flex flex-wrap justify-center gap-3">
+                <!-- Pills con ubicaciones y tiempos de distancia -->
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">UPB: 5 min</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Metroplus: 2 min</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Unicentro: 10 min</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">La 70: 10 min</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Supermercados: 3 min</span>
+              </div>
+            </div>
+          </section>
 
-<!-- SECCIÓN SUPERANFITRIÓN -->
-<section class="py-6" id="superanfitrion">
-  <div class="flex flex-col items-center gap-6 text-center">
-    <h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Superanfitrión AirBnb</h2>
-    <picture>
-      <source srcset="/images/superanfitrion.webp" type="image/webp">
-      <img src="/images/superanfitrion.webp" 
-           alt="Perfil de Juan, superanfitrión AirBnb con calificación 4.89 y 53 reseñas" 
-           class="w-60 h-40 rounded-xl shadow-md object-cover"
-           loading="lazy"
-           width="240"
-           height="160">
-    </picture>
-    <p class="max-w-md">
-      Atención amable, check‑in claro y respuestas rápidas.<br/>
-      Políticas: sin fiestas ni visitantes externos.
-    </p>
-  </div>
-</section>
+          <!-- ========================================
+               SECCIÓN: SUPERANFITRIÓN
+               Perfil del anfitrión con credenciales de AirBnb
+               ======================================== -->
+          <section class="py-6" id="superanfitrion">
+            <div class="flex flex-col items-center gap-6 text-center">
+              <h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Superanfitrión AirBnb</h2>
+              
+              <!-- Imagen del perfil del anfitrión -->
+              <picture>
+                <source srcset="/images/superanfitrion.webp" type="image/webp">
+                <img src="/images/superanfitrion.webp" 
+                     alt="Perfil de Juan, superanfitrión AirBnb con calificación 4.89 y 53 reseñas" 
+                     class="w-60 h-40 rounded-xl shadow-md object-cover"
+                     loading="lazy"
+                     width="240"
+                     height="160">
+              </picture>
+              
+              <!-- Descripción del servicio -->
+              <p class="max-w-md">
+                Atención amable, check‑in claro y respuestas rápidas.<br/>
+                Políticas: sin fiestas ni visitantes externos.
+              </p>
+            </div>
+          </section>
 
-<!-- SECCIÓN RESEÑAS -->
-<section class="py-6" id="reseñas">
-  <div class="flex flex-col items-center gap-6 text-center">
-    <h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Reseñas</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pt-4 justify-items-center">
-      
-      <!-- Reseña 1 -->
-      <picture class="w-4/5 sm:w-11/12 lg:w-full">
-        <source srcset="/images/resenia-1.webp" type="image/webp">
-        <img src="/images/resenia-1.webp" 
-             alt="Testimonio de huésped destacando la limpieza y ubicación" 
-             class="rounded-xl shadow-md w-full object-cover"
-             loading="lazy"
-             width="800"
-             height="600">
-      </picture>
-      
-      <!-- Reseña 2 -->
-      <picture class="w-4/5 sm:w-11/12 lg:w-full">
-        <source srcset="/images/resenia-2.webp" type="image/webp">
-        <img src="/images/resenia-2.webp" 
-             alt="Testimonio de huésped resaltando la hospitalidad del anfitrión" 
-             class="rounded-xl shadow-md w-full object-cover"
-             loading="lazy"
-             width="800"
-             height="600">
-      </picture>
-      
-      <!-- Reseña 3 -->
-      <picture class="w-4/5 sm:w-11/12 lg:w-full">
-        <source srcset="/images/resenia-3.webp" type="image/webp">
-        <img src="/images/resenia-3.webp" 
-             alt="Testimonio de huésped que disfrutó su estadía larga" 
-             class="rounded-xl shadow-md w-full object-cover"
-             loading="lazy"
-             width="800"
-             height="600">
-      </picture>
-      
-    </div>
-  </div>
-</section>
+          <!-- ========================================
+               SECCIÓN: RESEÑAS
+               Testimonios de huéspedes previos
+               ======================================== -->
+          <section class="py-6" id="reseñas">
+            <div class="flex flex-col items-center gap-6 text-center">
+              <h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Reseñas</h2>
+              
+              <!-- Grid de 3 reseñas (1 columna móvil, 3 en desktop) -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pt-4 justify-items-center">
+                
+                <!-- Reseña 1 -->
+                <picture class="w-4/5 sm:w-11/12 lg:w-full">
+                  <source srcset="/images/resenia-1.webp" type="image/webp">
+                  <img src="/images/resenia-1.webp" 
+                       alt="Testimonio de huésped destacando la limpieza y ubicación" 
+                       class="rounded-xl shadow-md w-full object-cover"
+                       loading="lazy"
+                       width="800"
+                       height="600">
+                </picture>
+                
+                <!-- Reseña 2 -->
+                <picture class="w-4/5 sm:w-11/12 lg:w-full">
+                  <source srcset="/images/resenia-2.webp" type="image/webp">
+                  <img src="/images/resenia-2.webp" 
+                       alt="Testimonio de huésped resaltando la hospitalidad del anfitrión" 
+                       class="rounded-xl shadow-md w-full object-cover"
+                       loading="lazy"
+                       width="800"
+                       height="600">
+                </picture>
+                
+                <!-- Reseña 3 -->
+                <picture class="w-4/5 sm:w-11/12 lg:w-full">
+                  <source srcset="/images/resenia-3.webp" type="image/webp">
+                  <img src="/images/resenia-3.webp" 
+                       alt="Testimonio de huésped que disfrutó su estadía larga" 
+                       class="rounded-xl shadow-md w-full object-cover"
+                       loading="lazy"
+                       width="800"
+                       height="600">
+                </picture>
+              </div>
+            </div>
+          </section>
 
-<section class="py-6" id="cerca-de">
-<div class="flex flex-col items-center gap-6 text-center">
-<h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Para:</h2>
-<div class="flex flex-wrap justify-center gap-3">
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Turistas</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Nómadas Digitales</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Estudiantes</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Viajes de Trabajo</span>
-<span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Parejas Tranquilas</span>
-</div>
-</div>
-</section>
+          <!-- ========================================
+               SECCIÓN: PARA (Público objetivo)
+               Tipos de huéspedes ideales
+               ======================================== -->
+          <section class="py-6" id="para">
+            <div class="flex flex-col items-center gap-6 text-center">
+              <h2 class="text-text-dark dark:text-white text-3xl font-bold leading-tight tracking-tighter">Para:</h2>
+              <div class="flex flex-wrap justify-center gap-3">
+                <!-- Pills con tipos de huéspedes -->
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Turistas</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Nómadas Digitales</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Estudiantes</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Viajes de Trabajo</span>
+                <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full px-4 py-2 text-sm font-semibold">Parejas Tranquilas</span>
+              </div>
+            </div>
+          </section>
 
-<footer class="pt-12 pb-8" id="footer">
-<div class="flex flex-col items-center gap-4 text-center text-xs text-gray-500 dark:text-gray-400">
-<div class="flex flex-wrap justify-center gap-x-4 gap-y-2">
-<a class="hover:text-primary dark:hover:text-primary" href="#habitaciones">Ver habitaciones</a>
-<a class="hover:text-primary dark:hover:text-primary" href="#superanfitrion">Superanfitrion</a>
-<a class="hover:text-primary dark:hover:text-primary" href="#reseñas">Reseñas</a> 
-<a class="hover:text-primary dark:hover:text-primary" href="#cerca-de">Cerca de</a>
-</div>
-<p>Este sitio es una landing page informativa. Las reservas se procesan exclusivamente a través de Airbnb.</p>
-<p>© 2025 Rentas Rosales. Todos los derechos reservados.</p>
-</div>
-</footer>
-</div>
-</main>
-</div>
-<a class="fixed bottom-4 right-4 sm:bottom-6 sm:right-10 flex items-center gap-2 px-4 py-2 bg-card-light dark:bg-card-dark rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" href="#">
-<span class="material-symbols-outlined text-text-dark dark:text-white text-lg">arrow_upward</span>
-<span class="text-sm font-medium text-text-dark dark:text-white hidden sm:inline">Volver arriba</span>
-</a>
-</div>
-</body></html>
+          <!-- ========================================
+               FOOTER
+               Enlaces de navegación y aviso legal
+               ======================================== -->
+          <footer class="pt-12 pb-8" id="footer">
+            <div class="flex flex-col items-center gap-4 text-center text-xs text-gray-500 dark:text-gray-400">
+              <!-- Navegación del footer -->
+              <div class="flex flex-wrap justify-center gap-x-4 gap-y-2">
+                <a class="hover:text-primary dark:hover:text-primary" href="#habitaciones">Ver habitaciones</a>
+                <a class="hover:text-primary dark:hover:text-primary" href="#superanfitrion">Superanfitrion</a>
+                <a class="hover:text-primary dark:hover:text-primary" href="#reseñas">Reseñas</a> 
+                <a class="hover:text-primary dark:hover:text-primary" href="#cerca-de">Cerca de</a>
+              </div>
+              
+              <!-- Disclaimer legal -->
+              <p>Este sitio es una landing page informativa. Las reservas se procesan exclusivamente a través de Airbnb.</p>
+              
+              <!-- Copyright -->
+              <p>© 2025 Rentas Rosales. Todos los derechos reservados.</p>
+            </div>
+          </footer>
+          
+        </div> <!-- fin layout-content-container -->
+      </main>
+    </div> <!-- fin layout-container -->
+    
+    <!-- ========================================
+         BOTÓN "VOLVER ARRIBA" (Sticky)
+         Fijo en la esquina inferior derecha
+         ======================================== -->
+    <a class="fixed bottom-4 right-4 sm:bottom-6 sm:right-10 flex items-center gap-2 px-4 py-2 bg-card-light dark:bg-card-dark rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
+       href="#"> <!-- Enlace a ancla vacía (scroll to top) -->
+      <span class="material-symbols-outlined text-text-dark dark:text-white text-lg">arrow_upward</span>
+      <span class="text-sm font-medium text-text-dark dark:text-white hidden sm:inline">Volver arriba</span>
+    </a>
+    
+  </div> <!-- fin contenedor principal -->
+</body>
+</html>
