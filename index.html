@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
   
   <!-- Google Material Symbols: íconos (wifi, shower, bed, etc.) -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet"/>
   
   <!-- ========================================
        CONFIGURACIÓN DE TAILWIND CSS
@@ -38,7 +38,7 @@
           // Colores personalizados del proyecto
           colors: {
             "primary": "#E63946",        // Rojo para CTAs y acentos
-            "secondary": "#2A9D8F",      // Verde azulado para badges y detalles
+            "secondary": "#1F7A6D",      // Verde azulado para badges y detalles
             "text-dark": "#2B2D42",      // Texto principal modo claro
             "background-light": "#FFFFFF", // Fondo modo claro
             "background-dark": "#1a1b26",  // Fondo modo oscuro
@@ -143,7 +143,8 @@
                        alt="Habitación 101: amplia con ventana a la calle, dos camas dobles en espacios diferentes, baño privado y escritorio" 
                        class="w-full aspect-video object-cover"
                        loading="eager"          
-                       fetchpriority="high"     
+                       fetchpriority="high" 
+                       decoding="async"    
                        width="640"              
                        height="360">
                 </picture>
