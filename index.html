@@ -10,7 +10,7 @@
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertbefore(j,f);
   })(window,document,'script','dataLayer','GTM-KQKXK3QM');</script>
   <!-- End Google Tag Manager -->
 
@@ -35,6 +35,23 @@
   <title>Rentas Rosales | Habitaciones Privadas en Belén Rosales - Medellín</title>
   <meta content="Habitaciones privadas con baño y escritorio en barrio residencial tranquilo y seguro. Ubicación estratégica y hasta 30% de descuento en estadías largas." name="description"/>
   
+  <!-- NUEVO: Canonical URL para evitar contenido duplicado -->
+  <link rel="canonical" href="https://rentasrosales.vercel.app/">
+  
+  <!-- NUEVO: Open Graph / Facebook para compartir en redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rentasrosales.vercel.app/">
+  <meta property="og:title" content="Rentas Rosales | Habitaciones Privadas en Belén Rosales">
+  <meta property="og:description" content="Habitaciones privadas desde $65.000 COP/noche en barrio tranquilo y seguro. Superanfitrión Airbnb ⭐⭐⭐⭐⭐">
+  <meta property="og:image" content="https://rentasrosales.vercel.app/images/habitacion-101.webp">
+  
+  <!-- NUEVO: Twitter Card para compartir en Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://rentasrosales.vercel.app/">
+  <meta property="twitter:title" content="Rentas Rosales | Habitaciones Privadas">
+  <meta property="twitter:description" content="Habitaciones desde $65.000/noche en Belén Rosales, Medellín">
+  <meta property="twitter:image" content="https://rentasrosales.vercel.app/images/habitacion-101.webp">
+  
   <!-- Favicon: ícono de la pestaña del navegador (emoji de casa en SVG) -->
   <link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🏠&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
   
@@ -44,23 +61,22 @@
   <!-- Tailwind CSS via CDN con plugins de forms y container-queries -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   
-  <!-- Google Fonts: Work Sans (tipografía principal) -->
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-  
-  <!-- Google Material Symbols: íconos (wifi, shower, bed, etc.) -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet"/>
+  <!-- OPTIMIZADO: Google Fonts con carga asíncrona para no bloquear render -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"></noscript>
   
   <!-- ========================================
        CONFIGURACIÓN DE TAILWIND CSS
        ======================================== -->
   <script>
+    // SIMPLIFICADO: Configuración mínima de Tailwind (eliminado borderRadius innecesario)
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
           colors: {
             "primary": "#E63946",
-            "secondary": "#1F7A6D",  // Oscurecido para mejor contraste
+            "secondary": "#1F7A6D",
             "text-dark": "#2B2D42",
             "background-light": "#FFFFFF",
             "background-dark": "#1a1b26",
@@ -69,12 +85,6 @@
           },
           fontFamily: {
             display: ["Work Sans", "sans-serif"],
-          },
-          borderRadius: {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
           },
         },
       },
@@ -88,10 +98,46 @@
     html {
       scroll-behavior: smooth;
     }
-    .group:focus .group-focus\:block {
-      display: block;
-    }
+    /* ELIMINADO: CSS .group sin usar en el HTML */
   </style>
+  
+  <!-- ========================================
+       NUEVO: SCHEMA.ORG JSON-LD para SEO avanzado
+       Permite que Google muestre rich snippets con estrellas, precio, ubicación
+       ======================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Rentas Rosales",
+    "description": "Habitaciones privadas con baño y escritorio en Belén Rosales, Medellín",
+    "image": "https://rentasrosales.vercel.app/images/habitacion-101.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Belén Rosales",
+      "addressLocality": "Medellín",
+      "addressRegion": "Antioquia",
+      "addressCountry": "CO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "6.230833",
+      "longitude": "-75.606389"
+    },
+    "starRating": {
+      "@type": "Rating",
+      "ratingValue": "4.89",
+      "bestRating": "5"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.89",
+      "reviewCount": "53"
+    },
+    "priceRange": "$$",
+    "url": "https://rentasrosales.vercel.app/"
+  }
+  </script>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-text-dark dark:text-gray-200">
@@ -121,16 +167,9 @@
           
           <!-- ========================================
                HEADER / ENCABEZADO PRINCIPAL
+               ELIMINADO: Logo comentado que no se usaba
                ======================================== -->
           <header class="flex flex-col items-center justify-center gap-4 pt-4 pb-2 text-center">
-            <!-- Logo comentado - disponible para activar si se necesita -->
-            <!--
-            <div class="w-32 h-32 bg-center bg-no-repeat bg-cover rounded-full shadow-md" 
-                 data-alt="Rentas Rosales logo, an abstract pink and green geometric shape" 
-                 style='background-image: url("https://i.imgur.com/E67E0H2.png");'>
-            </div>
-            -->
-            
             <div class="flex flex-col gap-3">
               <!-- Título principal (H1) para SEO -->
               <h1 class="text-text-dark dark:text-white text-3xl sm:text-4xl font-black leading-tight tracking-tighter">
@@ -149,6 +188,8 @@
           <!-- ========================================
                SECCIÓN: HABITACIONES
                Grid responsivo con 7 habitaciones disponibles
+               MEJORADO: Tracking limpio con data-attributes (GTM capturará los eventos)
+               MEJORADO: rel="noopener noreferrer" para seguridad
                ======================================== -->
           <section class="py-4" id="habitaciones">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -176,12 +217,13 @@
                   <p class="text-secondary text-sm font-normal leading-normal">Desde $100.000 COP la noche - Max. 4 personas</p>
                 </div>
                 <div class="px-4 pb-2">
+                  <!-- MEJORADO: Tracking limpio con data-attributes + rel="noopener noreferrer" -->
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales101" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales101"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales101'}); fbq('track','Lead',{content_name:'rosales101',content_category:'habitacion',value:190.00,currency:'COP'}); return true;">
+                    data-price="100.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
@@ -212,9 +254,9 @@
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales102" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales102"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales102'}); fbq('track','Lead',{content_name:'rosales102',content_category:'habitacion',value:152.00,currency:'COP'}); return true;">
+                    data-price="70.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
@@ -245,9 +287,9 @@
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales201a" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales201a"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales201a'}); fbq('track','Lead',{content_name:'rosales201a',content_category:'habitacion',value:176.00,currency:'COP'}); return true;">
+                    data-price="90.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
@@ -278,9 +320,9 @@
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales202" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales202"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales202'}); fbq('track','Lead',{content_name:'rosales202',content_category:'habitacion',value:176.00,currency:'COP'}); return true;">
+                    data-price="90.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
@@ -311,9 +353,9 @@
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales203" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales203"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales203'}); fbq('track','Lead',{content_name:'rosales203',content_category:'habitacion',value:146.00,currency:'COP'}); return true;">
+                    data-price="65.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
@@ -344,9 +386,9 @@
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales204" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales204"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales204'}); fbq('track','Lead',{content_name:'rosales204',content_category:'habitacion',value:164.00,currency:'COP'}); return true;">
+                    data-price="80.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
@@ -382,9 +424,9 @@
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales205" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales205"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales205'}); fbq('track','Lead',{content_name:'rosales205',content_category:'habitacion',value:145.00,currency:'COP'}); return true;">
+                    data-price="80.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
@@ -416,45 +458,62 @@
                   <a class="flex w-full text-center items-center justify-center rounded-lg h-11 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-wide hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
                     href="https://airbnb.com/h/rosales206" 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     data-room="rosales206"
-                    onclick="gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/CONVERSION_ID','event_category':'reserva','event_label':'rosales206'}); fbq('track','Lead',{content_name:'rosales206',content_category:'habitacion',value:164.00,currency:'COP'}); return true;">
+                    data-price="80.00">
                     Consultar disponibilidad en AirBnb
                   </a>
                 </div>
               </div>
             </div>
             
-            <!-- Atributos comunes -->
+            <!-- ========================================
+                 Atributos comunes
+                 OPTIMIZADO: Iconos Material reemplazados por SVG inline para mejor rendimiento
+                 ======================================== -->
             <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-4 text-center">
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">shower</span>
+                <!-- SVG Inline: Shower (Baño) -->
+                <svg class="text-secondary" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 17c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm3-1c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm3 1c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm3-7v2H6v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v1h2V9c0-3.31-2.69-6-6-6S4 5.69 4 9v2c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-9c0-.55-.45-1-1-1z"/>
+                </svg>
                 <span class="text-sm font-medium">Baño Privado</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">bed</span>
+                <!-- SVG Inline: Bed (Cama) -->
+                <svg class="text-secondary" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 10.78V8c0-1.65-1.35-3-3-3h-4c-.77 0-1.47.3-2 .78-.53-.48-1.23-.78-2-.78H6C4.35 5 3 6.35 3 8v2.78c-.61.55-1 1.34-1 2.22v6h2v-2h16v2h2v-6c0-.88-.39-1.67-1-2.22zM14 7h4c.55 0 1 .45 1 1v2h-6V8c0-.55.45-1 1-1zM5 8c0-.55.45-1 1-1h4c.55 0 1 .45 1 1v2H5V8zm-1 7v-2c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v2H4z"/>
+                </svg>
                 <span class="text-sm font-medium">Camas de 1,60 m</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">air</span>
+                <!-- SVG Inline: Air (Ventilador) -->
+                <svg class="text-secondary" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.5 17c0 1.65-1.35 3-3 3s-3-1.35-3-3h2c0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1H2v-2h9.5c1.65 0 3 1.35 3 3zM19 6.5C19 4.57 17.43 3 15.5 3S12 4.57 12 6.5h2c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5S16.33 8 15.5 8H2v2h13.5c1.93 0 3.5-1.57 3.5-3.5zm-.5 4.5H2v2h16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5v2c1.93 0 3.5-1.57 3.5-3.5S20.43 11 18.5 11z"/>
+                </svg>
                 <span class="text-sm font-medium">Ventilador</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">wifi</span>
+                <!-- SVG Inline: WiFi -->
+                <svg class="text-secondary" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/>
+                </svg>
                 <span class="text-sm font-medium">Wi-Fi</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">tv</span>
+                <!-- SVG Inline: TV -->
+                <svg class="text-secondary" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/>
+                </svg>
                 <span class="text-sm font-medium">Smart TV</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">kitchen</span>
+                <!-- SVG Inline: Kitchen (Cocina) -->
+                <svg class="text-secondary" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2.01L6 2c-1.1 0-2 .89-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.11-.9-1.99-2-1.99zM18 20H6v-9.02h12V20zm0-11H6V4h12v5zM8 5h2v3H8zm0 7h2v5H8z"/>
+                </svg>
                 <span class="text-sm font-medium">Cocina Compartida Equipada</span>
               </div>
-              <!--div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">desk</span>
-                <span class="text-sm font-medium">Escritorio de Trabajo</span>
-              </div-->
             </div>
           </section>
 
@@ -597,14 +656,19 @@
     <!-- ========================================
          BOTÓN "VOLVER ARRIBA" (Sticky)
          Fijo en la esquina inferior derecha
+         OPTIMIZADO: SVG inline reemplaza Material Icon
          ======================================== -->
     <a class="fixed bottom-4 right-4 sm:bottom-6 sm:right-10 flex items-center gap-2 px-4 py-2 bg-card-light dark:bg-card-dark rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" 
-       href="#"> <!-- Enlace a ancla vacía (scroll to top) -->
-      <span class="material-symbols-outlined text-text-dark dark:text-white text-lg">arrow_upward</span>
+       href="#" aria-label="Volver arriba">
+      <!-- SVG Inline: Arrow Upward -->
+      <svg class="text-text-dark dark:text-white" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+      </svg>
       <span class="text-sm font-medium text-text-dark dark:text-white hidden sm:inline">Volver arriba</span>
     </a>
     
   </div> <!-- fin contenedor principal -->
+  
   <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
